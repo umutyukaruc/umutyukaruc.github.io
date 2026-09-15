@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Umut Yukaruç | Academic Portfolio</title>
+    
+    <!-- Tailwind CSS for rapid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter for general text, Merriweather for academic headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons (Email, X, ResearchGate, Scholar) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        navy: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            800: '#1e3a8a',
+                            900: '#102a43', // Deep academic blue
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1e3a8a; 
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 antialiased leading-relaxed">
+
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo / Name -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="font-serif font-bold text-xl text-navy-900 tracking-tight">
+                        Dr. Umut Yukaruç
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-sm font-medium text-gray-600 hover:text-navy-800 transition-colors">About</a>
+                    <a href="#research" class="text-sm font-medium text-gray-600 hover:text-navy-800 transition-colors">Research Interests</a>
+                    <a href="#projects" class="text-sm font-medium text-gray-600 hover:text-navy-800 transition-colors">Projects & Pubs</a>
+                    <a href="#contact" class="text-sm font-medium text-gray-600 hover:text-navy-800 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-navy-900 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-navy-800">About</a>
+                <a href="#research" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-navy-800">Research Interests</a>
+                <a href="#projects" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-navy-800">Projects & Pubs</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-navy-800">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section class="bg-navy-900 py-20 lg:py-32 border-b-8 border-navy-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="flex-1 space-y-6">
+                    <p class="text-navy-100 font-medium tracking-wide uppercase text-sm">Academic Portfolio</p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight">
+                        Dr. Umut Yukaruç
+                    </h1>
+                    <h2 class="text-xl md:text-2xl text-gray-300 font-light max-w-2xl">
+                        Researcher in International Relations and Political Science
+                    </h2>
+                    
+                    <div class="pt-4 space-y-3">
+                        <div class="flex items-center justify-center md:justify-start text-gray-400">
+                            <i class="fas fa-university w-6"></i>
+                            <span>Visiting Postdoctoral Researcher, <strong class="text-white">University of Tübingen</strong></span>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start text-gray-400">
+                            <i class="fas fa-chalkboard-teacher w-6"></i>
+                            <span>Faculty Member, <strong class="text-white">Nevşehir Hacı Bektaş Veli University</strong></span>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-8 flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="#projects" class="bg-white text-navy-900 px-6 py-3 rounded shadow font-medium hover:bg-gray-100 transition-colors">
+                            View Current Projects
+                        </a>
+                        <a href="#contact" class="border border-gray-400 text-white px-6 py-3 rounded hover:border-white hover:text-white transition-colors">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl font-serif font-bold text-navy-900 mb-8 border-b-2 border-gray-100 pb-4">About Me</h3>
+                <div class="prose prose-lg text-gray-600 max-w-none">
+                    <p class="mb-4">
+                        My work primarily sits at the intersection of critical security studies, populism, conspiracy theories, foreign policy and popular culture.
+                    </p>
+                    <p class="mb-4">
+                        Currently, I am conducting research as a Visiting Postdoctoral Researcher at the University of Tübingen, Germany, while maintaining my role as a Faculty Member at Nevşehir Hacı Bektaş Veli University in Turkey. 
+                    </p>
+                    <p>
+                        My academic journey is driven by a deep curiosity about how emotions, discourse, and non-traditional security threats shape domestic and international political landscapes. I strive to bridge theoretical insights with empirical analyses to understand the complexities of modern populism and foreign policy making.
+                    </p>
+                </div>
+                
+                <div class="mt-12">
+                    <h4 class="text-2xl font-serif font-bold text-navy-900 mb-6 border-b-2 border-gray-100 pb-2">Education</h4>
+                    <div class="space-y-6">
+                        <!-- PhD -->
+                        <div class="flex flex-col md:flex-row md:items-baseline md:justify-between border-l-4 border-navy-800 pl-4 bg-gray-50/50 p-3 rounded-r-lg">
+                            <div>
+                                <h5 class="text-lg font-bold text-gray-900">Ph.D. in Politics</h5>
+                                <p class="text-navy-800 font-medium">University of East Anglia</p>
+                            </div>
+                            <div class="text-gray-500 font-medium md:text-right mt-1 md:mt-0">
+                                2017
+                            </div>
+                        </div>
+                        
+                        <!-- MA -->
+                        <div class="flex flex-col md:flex-row md:items-baseline md:justify-between border-l-4 border-navy-800 pl-4 bg-gray-50/50 p-3 rounded-r-lg">
+                            <div>
+                                <h5 class="text-lg font-bold text-gray-900">M.A. in International Relations</h5>
+                                <p class="text-navy-800 font-medium">University of Exeter</p>
+                            </div>
+                            <div class="text-gray-500 font-medium md:text-right mt-1 md:mt-0">
+                                2013
+                            </div>
+                        </div>
+                        
+                        <!-- BA -->
+                        <div class="flex flex-col md:flex-row md:items-baseline md:justify-between border-l-4 border-navy-800 pl-4 bg-gray-50/50 p-3 rounded-r-lg">
+                            <div>
+                                <h5 class="text-lg font-bold text-gray-900">B.A. in International Relations</h5>
+                                <p class="text-navy-800 font-medium">Hacettepe University</p>
+                            </div>
+                            <div class="text-gray-500 font-medium md:text-right mt-1 md:mt-0">
+                                2010
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Interests Section -->
+        <section id="research" class="py-20 bg-navy-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl font-serif font-bold text-navy-900 mb-12 text-center">Research Interests</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Interest Cards -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex items-center justify-center text-center">
+                        <h4 class="text-lg font-semibold text-gray-900">Critical Security Studies</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex items-center justify-center text-center">
+                        <h4 class="text-lg font-semibold text-gray-900">Populism</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex items-center justify-center text-center">
+                        <h4 class="text-lg font-semibold text-gray-900">Conspiracy Theories</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex items-center justify-center text-center">
+                        <h4 class="text-lg font-semibold text-gray-900">Foreign Policy</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex items-center justify-center text-center">
+                        <h4 class="text-lg font-semibold text-gray-900">Popular Culture</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Publications -->
+        <section id="projects" class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl font-serif font-bold text-navy-900 mb-8 border-b-2 border-gray-100 pb-4">Current Projects & Research</h3>
+                
+                <div class="space-y-8">
+                    <!-- Featured Project -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 lg:p-8 relative overflow-hidden shadow-sm">
+                        <div class="absolute top-0 right-0 bg-navy-800 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                            Featured Project
+                        </div>
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-2">Affective Conspiracies</h4>
+                        <p class="text-sm font-medium text-navy-800 mb-4">TÜBİTAK 2219 Postdoctoral Research Project</p>
+                        <p class="text-gray-600 mb-4">
+                            This ongoing research project examines how populist actors in Germany and Türkiye use conspiracy-laden migration narratives to mobilize emotions such as fear and anger and to frame migration as an existential security threat. Focusing comparatively on the political parties, the project combines securitization theory, populism studies, conspiracy theory research, and the study of political emotions through intertextual discourse analysis of speeches, party documents, social media, and visual-cultural material. It aims to address the limited scholarship on the emotional mechanisms through which conspiracy narratives contribute to the securitization of migration across different political and cultural contexts.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500 font-medium">
+                            <i class="far fa-clock mr-2"></i> Status: Ongoing at University of Tübingen
+                        </div>
+                    </div>
+
+                    <!-- Note on Publications -->
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-100">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Academic Profiles & Publications</h4>
+                        <p class="text-gray-600 text-sm mb-4">
+                            For a comprehensive and up-to-date list of my peer-reviewed articles, book chapters, and conference presentations, please visit my academic profiles.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://scholar.google.com/citations?user=n_FFDXkAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-navy-800 hover:text-navy-900 bg-white px-4 py-2 border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 transition">
+                                Google Scholar <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Umut-Yukaruc?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-navy-800 hover:text-navy-900 bg-white px-4 py-2 border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 transition">
+                                ResearchGate <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                            </a>
+                            <a href="https://orcid.org/0000-0001-9107-5961" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-navy-800 hover:text-navy-900 bg-white px-4 py-2 border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 transition">
+                                ORCID <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                            </a>
+                            <a href="https://biz.nevsehir.edu.tr/umutyukaruc/en" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-navy-800 hover:text-navy-900 bg-white px-4 py-2 border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 transition">
+                                NEVÜ Profile <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-navy-900 text-white py-12 border-t border-navy-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-serif font-bold mb-6">Get in Touch</h3>
+            <p class="text-gray-400 mb-8 max-w-xl mx-auto">
+                I am open to academic collaborations, research discussions, and media inquiries regarding my fields of expertise. Feel free to reach out via email or connect with me on academic networks.
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-10">
+                <a href="mailto:umutyukaruc@gmail.com" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-navy-900 bg-white hover:bg-gray-100 transition-colors w-full md:w-auto">
+                    <i class="fas fa-envelope mr-2"></i> umutyukaruc@gmail.com
+                </a>
+                <a href="mailto:umutyukaruc@nevsehir.edu.tr" class="inline-flex items-center justify-center px-6 py-3 border border-gray-600 text-base font-medium rounded-md text-white hover:border-white transition-colors w-full md:w-auto">
+                    <i class="fas fa-envelope mr-2"></i> NEVÜ Email
+                </a>
+                <a href="mailto:umut.yukaruc@philosophie.uni-tuebingen.de" class="inline-flex items-center justify-center px-6 py-3 border border-gray-600 text-base font-medium rounded-md text-white hover:border-white transition-colors w-full md:w-auto">
+                    <i class="fas fa-envelope mr-2"></i> Tübingen Email
+                </a>
+            </div>
+
+            <div class="flex justify-center space-x-8 pb-8 border-b border-gray-800">
+                <a href="https://biz.nevsehir.edu.tr/umutyukaruc/en" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors transform hover:scale-110 flex items-center gap-2" aria-label="Nevşehir University Profile">
+                    <i class="fas fa-university text-2xl"></i>
+                    <span class="hidden md:inline text-sm font-medium">NEVÜ</span>
+                </a>
+                <a href="https://www.researchgate.net/profile/Umut-Yukaruc?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors transform hover:scale-110 flex items-center gap-2" aria-label="ResearchGate">
+                    <i class="fab fa-researchgate text-2xl"></i>
+                    <span class="hidden md:inline text-sm font-medium">ResearchGate</span>
+                </a>
+                <a href="https://x.com/UmutYukaruc" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors transform hover:scale-110 flex items-center gap-2" aria-label="X (Twitter)">
+                    <i class="fab fa-twitter text-2xl"></i>
+                    <span class="hidden md:inline text-sm font-medium">X</span>
+                </a>
+                <a href="https://www.linkedin.com/in/umut-yukaru%C3%A7-a66213182/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors transform hover:scale-110 flex items-center gap-2" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                    <span class="hidden md:inline text-sm font-medium">LinkedIn</span>
+                </a>
+            </div>
+            
+            <p class="mt-8 text-gray-500 text-sm">
+                &copy; <span id="year"></span> Dr. Umut Yukaruç. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle Logic
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
